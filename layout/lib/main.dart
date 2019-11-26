@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import './ui/home.dart';
 
 void main(){
+  var tit = "Gesture";
   runApp(
-    new MaterialApp(
-      title: "Gusture",
-      home: new Home(),
+    new MaterialApp(  
+      title: tit,
+      home: new Home(title: tit,),
     )
   );
 }
