@@ -15,6 +15,7 @@ class MyAppState extends State {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "haii",
       home: Scaffold(
         appBar: AppBar(
           title: Text("show Network Image"),
@@ -31,7 +32,14 @@ class MyAppState extends State {
                     count = count + 1;
                   })
                 },
-              )
+              ),
+              RaisedButton(
+                  child: Text("Back"),
+                  onPressed: () => {
+                        setState(() {
+                          count = count - 1;
+                        })
+                      })
             ],
           ),
         ),
